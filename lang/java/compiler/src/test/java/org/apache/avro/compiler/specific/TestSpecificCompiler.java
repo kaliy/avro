@@ -716,7 +716,7 @@ public class TestSpecificCompiler {
   }
 
   @Test
-  public void testPojoWithOptionalCreatedWhenOptionTurnedOn() throws IOException {
+  public void testPojoWithOptionalNullableFieldsCreatedWhenOptionTurnedOn() throws IOException {
     SpecificCompiler compiler = createCompiler();
     compiler.setGettersReturnOptional(true);
     // compiler.setCreateOptionalGetters(true);
@@ -732,7 +732,7 @@ public class TestSpecificCompiler {
         }
       }
     }
-    assertEquals(9, optionalFound);
+    assertEquals(5, optionalFound);
   }
 
   @Test

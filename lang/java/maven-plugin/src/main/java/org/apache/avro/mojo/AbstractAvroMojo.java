@@ -139,8 +139,7 @@ public abstract class AbstractAvroMojo extends AbstractMojo {
 
   /**
    * The gettersReturnOptional parameter enables generating get... methods that
-   * return an Optional of the requested type. This will replace the This works
-   * ONLY on Java 8+
+   * return an Optional for the nullable fields. This works ONLY on Java 8+
    *
    * @parameter property="gettersReturnOptional"
    */
