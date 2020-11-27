@@ -28,6 +28,7 @@
   </parent>
 
   <artifactId>avro</artifactId>
+  <version>1.10.2-patched</version>
 
   <name>Apache Avro</name>
   <url>https://avro.apache.org</url>
@@ -46,6 +47,20 @@
     <osgi.export>org.apache.avro*;version="${project.version}"</osgi.export>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>nexus.azimo.com</id>
+      <url>https://nexus.azimo.com/repository/maven-releases/</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>nexus.azimo.com</id>
+      <url>https://nexus.azimo.com/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <resources>
       <resource>
@@ -56,6 +71,11 @@
       </resource>
     </resources>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.2</version>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
