@@ -184,7 +184,7 @@ public class SpecificData extends GenericData {
   }
 
   private boolean useCustomCoderFlag = Boolean
-      .parseBoolean(System.getProperty("org.apache.avro.specific.use_custom_coders", "false"));
+      .parseBoolean(System.getProperty("org.apache.avro.specific.use_custom_coders", "true"));
 
   /**
    * Retrieve the current value of the custom-coders feature flag. Defaults to

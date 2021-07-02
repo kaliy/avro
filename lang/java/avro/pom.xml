@@ -28,7 +28,7 @@
   </parent>
 
   <artifactId>avro</artifactId>
-  <version>1.10.2-patched</version>
+  <version>1.10.2-patched-2</version>
 
   <name>Apache Avro</name>
   <url>https://avro.apache.org</url>
